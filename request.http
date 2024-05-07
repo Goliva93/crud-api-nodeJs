@@ -1,0 +1,28 @@
+###
+post http://localhost:9000/api/users
+Content-Type: application/json
+
+{
+    "name": "Frank Huaylinos",
+    "age": "31",
+    "email": "giomar.oliva.93@gmail.com"
+}
+
+###
+get http://localhost:9000/api/getUsers
+
+###
+get http://localhost:9000/api/getUser/6639c5cb12ef8e9d742d19d2
+
+###
+put http://localhost:9000/api/updateUser/663a4efa45612cf938e8df79
+Content-Type: application/json
+
+{
+    "name": "Frank Huaylinos Velasquez",
+    "age": "36",
+    "email": "frank@gmail.com"
+}
+
+###
+delete http://localhost:9000/api/deleteuser/6639c5cb12ef8e9d742d19d2
